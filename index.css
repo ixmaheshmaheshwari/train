@@ -57,7 +57,7 @@ background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, F
     margin-bottom: 31px;
 }
 
-#taskitem {
+.taskitem {
     display: flex;
     margin: 10px;
     border: 2px transparent;
