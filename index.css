@@ -6,7 +6,7 @@ background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, F
 }
 #task {
     height: 30px;
-    width: 302px;
+    width: 342px;
 }
 ::placeholder {
     padding-left: 5px;
@@ -66,4 +66,18 @@ background: linear-gradient(to right, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, F
     border-radius: 5px;
     background-color: white;
     padding-left: 6px;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    margin-left: 148px;
+    opacity:0;
+}
+.fa-solid:hover {
+    opacity: 1;
+  }
+  #icon1 {
+    margin-left: 168px;
+}
+#icon2 {
+    margin-left: 168px;
 }
