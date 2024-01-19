@@ -1,3 +1,7 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,102,196,1) 34%, rgba(0,212,255,1) 100%);
+}
 #task {
     height: 30px;
     width: 302px;
@@ -15,6 +19,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
+    border-radius: 10px;
+    border: 2px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,194,196,1) 52%, rgba(0,212,255,1) 100%);
 }
 
 #todo {
@@ -41,6 +49,7 @@
 }
 
 #taskitem {
+    display: flex;
     margin: 10px;
     border: 2px transparent;
     height: 28px;
