@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <div id="inputinterset">
+                <label>Interest rate:</label>
+                <input type="text" onkeydown="check_interset()" id="interest">
+                <label id="label-interset" class="error"></label>
+            </div>
+            <div id="inputtime">
+                <label>Time period:</label>
+                <input type="text" onkeydown="check_time()" id="time">
+                <label id="label-time" class="error"></label>
+            </div>
+            <div id="inputamount">
+                <label>Principle Amount:</label>
+                <input type="text" onkeydown="check_amount()" id="amount">
+                <label id="label-amount" class="error"></label>
+            </div>
+            <input type="button" id="btn_calculate" value="Calculate">
+        </form>
+
+    </div>
+</body>
+
+</html>
