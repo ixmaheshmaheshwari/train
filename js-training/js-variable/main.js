@@ -2,49 +2,45 @@ console.log("hello");
 
 function check_interest(){
     let interest=document.getElementById("interest").value;
-    let intinterest;
-    console.log(interest);
-    if(!isNaN(interest)){
-        intinterest=parseInt(interest);
-    }
-    console.log(typeof  intinterest)
-    if (typeof intinterest !== "number"){
-        document.getElementById("label-interset").style.display="flex";
-        document.getElementById("label-interset").innerText="Please enter numeric value";
+    console.log( typeof interest);
+
+    console.log(typeof  interest)
+    if (isNaN(interest)){
+        document.getElementById("label-interest").style.display="flex";
+        document.getElementById("label-interest").innerText="Please enter numeric value";
     }
     else{
-        document.getElementById("label-interset").innerText = ""; // Clear any previous error message
+        document.getElementById("label-interest").style.display="none";
+        document.getElementById("label-interest").innerText = ""; // Clear any previous error message
     }
+
 }
 function check_time(){
     let time=document.getElementById("time").value;
-    let inttime;
+   
     console.log(time);
-    if(!isNaN(time)){
-        inttime=parseInt(time);
-    }
-    console.log(typeof  inttime)
-    if (typeof inttime !== "number"){
+    if (isNaN(time)){
         document.getElementById("label-time").style.display="flex";
         document.getElementById("label-time").innerText="Please enter numeric value";
     }
     else{
+        document.getElementById("label-time").style.display="none";
         document.getElementById("label-time").innerText = ""; // Clear any previous error message
     }
 }
+
 function check_amount(){
     let amount=document.getElementById("amount").value;
-    let intamount;
+    
     console.log(amount);
-    if(!isNaN(amount)){
-        intamount=parseInt(amount);
-    }
-    console.log(typeof  intamount)
-    if (typeof intamount !== "number"){
+    
+    console.log(typeof  amount)
+    if (isNaN(amount)){
         document.getElementById("label-amount").style.display="flex";
         document.getElementById("label-amount").innerText="Please enter numeric value";
     }
     else{
+        document.getElementById("label-amount").style.display="none";
         document.getElementById("label-amount").innerText = ""; // Clear any previous error message
     }
 }
@@ -58,10 +54,16 @@ function calculate_fine(){
         document.getElementById("label-result").innerText="Please enter all values";
 
     }
+    else if (isNaN(result)){
+        document.getElementById("label-result").innerText="Invalid Result";
+
+    }
+       
+    
     else{
     document.getElementById("label-result").innerText="The Total Interest is :"+result;
 }
 }
 document.getElementById("interest").addEventListener("input",check_interest);
 document.getElementById("time").addEventListener("input",check_time);
-document.getElementById("amount").addEventListener("input",check_amount);
+document.getElementById("amount").addEventListener("keyup",check_amount);
