@@ -54,14 +54,13 @@ function calculate_fine(){
     let time=document.getElementById("time").value;
     let amount=document.getElementById("amount").value;
     let result=(time*interest*amount)/100;
-    if(interest==""){
+    if(interest=="" || time=="" || amount==""){
         document.getElementById("label-result").innerText="Please enter all values";
 
     }
     else{
     document.getElementById("label-result").innerText="The Total Interest is :"+result;
 }
-return false;
 }
 document.getElementById("interest").addEventListener("input",check_interest);
 document.getElementById("time").addEventListener("input",check_time);
