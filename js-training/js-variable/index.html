@@ -10,28 +10,29 @@
 </head>
 
 <body>
+    <div id="background"></div>
     <div id="container">
         <h1 id="heading">Simple Interest Calculator</h1>
         <form>
             <div id="inputinterset">
                 <label>Interest rate:</label>
-                <input type="text" id="interest" required>
+                <input type="text" id="interest" >
 
             </div>
             <label id="label-interset" class="error"></label>
             <div id="inputtime">
                 <label>Time period:</label>
-                <input type="text" id="time" required>
+                <input type="text" id="time" >
             </div>
             <label id="label-time" class="error"></label>
 
             <div id="inputamount">
                 <label>Principle Amount:</label>
-                <input type="text" id="amount" required>
+                <input type="text" id="amount" >
             </div>
             <label id="label-amount" class="error"></label>
             <div id="result">
-                <input type="submit" id="btn_calculate" value="Calculate" onclick="calculate_fine()">
+                <input type="button" id="btn_calculate" value="Calculate" onclick="calculate_fine()">
             </div>
         </form>
         <label id="label-result" class="result"></label>

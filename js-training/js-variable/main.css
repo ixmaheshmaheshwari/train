@@ -8,6 +8,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: white;
+}
+#background{
+    background-image: url("interst.jpg");
+    width: auto;
+    filter: blur(2px);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1{
    text-align: center;

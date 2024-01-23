@@ -61,6 +61,7 @@ function calculate_fine(){
     else{
     document.getElementById("label-result").innerText="The Total Interest is :"+result;
 }
+return false;
 }
 document.getElementById("interest").addEventListener("input",check_interest);
 document.getElementById("time").addEventListener("input",check_time);
