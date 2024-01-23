@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
     <div id="container">
+        <h1 id="heading">Simple Interest Calculator</h1>
         <form>
             <div id="inputinterset">
                 <label>Interest rate:</label>
-                <input type="text" onkeydown="check_interset()" id="interest">
-                <label id="label-interset" class="error"></label>
+                <input type="text" id="interest" required>
+
             </div>
+            <label id="label-interset" class="error"></label>
             <div id="inputtime">
                 <label>Time period:</label>
-                <input type="text" onkeydown="check_time()" id="time">
-                <label id="label-time" class="error"></label>
+                <input type="text" id="time" required>
             </div>
+            <label id="label-time" class="error"></label>
+
             <div id="inputamount">
                 <label>Principle Amount:</label>
-                <input type="text" onkeydown="check_amount()" id="amount">
-                <label id="label-amount" class="error"></label>
+                <input type="text" id="amount" required>
             </div>
-            <input type="button" id="btn_calculate" value="Calculate">
+            <label id="label-amount" class="error"></label>
+            <div id="result">
+                <input type="submit" id="btn_calculate" value="Calculate" onclick="calculate_fine()">
+            </div>
         </form>
-
+        <label id="label-result" class="result"></label>
     </div>
+    <script src="main.js" defer></script>
 </body>
 
 </html>
