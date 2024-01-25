@@ -83,11 +83,9 @@ function printinfo() {
   for (let socialMedia in duaLipaInfo.socialMedia) {
     socialHtml += `<ul>
                     <li><strong>${socialMedia}:</strong> ${duaLipaInfo.socialMedia[socialMedia]}</li>
-                 </ul>`;
+                  </ul>`;
   }
   socialMedias.innerHTML=socialHtml;
   container.appendChild(socialMedias);
-  
-
 }
 printinfo();
