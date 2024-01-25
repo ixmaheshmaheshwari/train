@@ -34,7 +34,7 @@ function printinfo() {
   const artistName = document.createElement("h2");
   artistName.innerHTML = `<strong> Artist Name:</strong> ${duaLipaInfo.artist}`;
   container.appendChild(artistName);
-
+ artistName.id="header";
   const birthDate = document.createElement("div");
   birthDate.innerHTML = `<strong>Birth Date:</strong> ${duaLipaInfo.birthDate}`;
   container.appendChild(birthDate);
